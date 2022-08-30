@@ -1,0 +1,12 @@
+/* 부트스트랩으러 표현할 수 없는 스타일을 위해 사용할 것 - base.html에 기본으로 참조 돼있음 */
+.comment {
+border-top:dotted 1px #ddd;
+font-size:0.7em;
+
+}
+
+.suj > a {   /* 그냥 .suj하면 안됨, ">a" 를 붙여야함
+                 detail.html에서 댓글 수정임                           */
+color:red;
+
+}

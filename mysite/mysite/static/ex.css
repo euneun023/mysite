@@ -1,0 +1,6 @@
+.sak > a{
+color:orange;
+
+}
+
+/* css는 base.html 에다가 추가해주면 여러개의 css라도 다 연동 가능하다. */

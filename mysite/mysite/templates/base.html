@@ -1,0 +1,37 @@
+{% load static %}
+<! DOCTYPE html >
+<html lang="ko">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+    <!--pybo css /style.css는 base.html에 -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'ex.css' %}">    <!-- 여러개의 css를 참조 -->
+
+
+    <title>Hello pybo!</title>
+</head>
+<body>
+<!--기본 템플릿에 삽입될 내용 start / 이부분 부터 상속받은 html들이 구현 해야될 영역-->
+{% block content %}
+{% endblock %}
+<!--기본 템플릿 안에 삽입될 내용 END-->
+
+<!--jQuery Js /연동 -->
+<script src="{% static 'jquery-3.6.0.min.js' %}"></script>
+<!--Bootstrap JS /연동-->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+
+<!--자바스크립트 시작 / 제이쿼리를 사용한 코드를 작성할 수 있다.-->
+{% block script %}
+{% endblock %}
+<!--자바스크립트 끝-->
+
+</body>
+</html>

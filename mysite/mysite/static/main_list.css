@@ -1,0 +1,9 @@
+/* 첫 리스트 화면 의 css지만 부트스트랩 적용하자 > 예시로 만들어봄 */
+
+.thead-dark{
+background-color: black;
+}
+
+.thead-dark >th{
+color: white;
+}
